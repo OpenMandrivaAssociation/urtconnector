@@ -3,7 +3,7 @@ Name:           urtconnector
 Version:        0.5.1
 Release:        %mkrel 1
 License:        GPLv3
-Group:          Amusements/Games
+Group:          Games/Other
 Source0:        http://urtconnector.googlecode.com/files/%{name}-%{version}.tar.gz
 Patch0:         change_qstat_binary_name.diff
 Url:            http://code.google.com/p/%{name}/
