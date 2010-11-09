@@ -9,6 +9,7 @@ Patch0:         change_qstat_binary_name.diff
 Url:            http://code.google.com/p/%{name}/
 BuildRequires:  qt4-devel
 BuildRequires:  boost-devel
+BuildRequires:  cmake
 Requires:       qstat
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -32,7 +33,7 @@ This program uses Qt4, written in C++ and can be run on windows, unix or mac.
 %patch0 -p1
 
 %build
-%cmake_kde4
+%cmake_qt4
 %make
 
 %install
