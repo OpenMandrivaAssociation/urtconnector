@@ -1,25 +1,26 @@
 Summary:        Advanced UrbanTerror launcher program
 Name:           urtconnector
-Version:        0.8.1
+Version:        0.9.0
 Release:        1
 License:        GPLv3
 Group:          Games/Other
 Url:            http://code.google.com/p/%{name}/
 Source0:        http://urtconnector.googlecode.com/files/%{name}-%{version}.tar.gz
-Patch0:         change_qstat_binary_name.diff
 
 BuildRequires:  qt4-devel
 BuildRequires:  boost-devel
+BuildRequires:  pkgconfig(phonon)
 BuildRequires:  cmake
 Requires:       qstat
 
 %description
-Primary developed by Vladislav Navrocky (=XaoC=vlad.ru), =XaoC= and Loaded Arms Russian clans members.
-This program uses Qt4, written in C++ and can be run on windows, unix or mac.
+Primary developed by Vladislav Navrocky (=XaoC=vlad.ru),
+=XaoC= and Loaded Arms Russian clans members.
+This program uses Qt4, written in C++ and can
+be run on windows, unix or mac.
 
 %prep 
-%setup -qn %{name}-%{version}
-%patch0 -p1
+%setup -qn %{name}
 
 %build
 %cmake_qt4
@@ -28,9 +29,7 @@ This program uses Qt4, written in C++ and can be run on windows, unix or mac.
 %install
 %makeinstall_std -C build
 
-%find_lang %name
-
-%files -f %{name}.lang
+%files
 %{_bindir}/*
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/pixmaps/%{name}.png
