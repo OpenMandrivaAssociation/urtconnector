@@ -1,7 +1,7 @@
 Summary:        Advanced UrbanTerror launcher program
 Name:           urtconnector
 Version:        0.9.0
-Release:        1
+Release:        2
 License:        GPLv3
 Group:          Games/Other
 Url:            http://code.google.com/p/%{name}/
