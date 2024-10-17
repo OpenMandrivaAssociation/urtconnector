@@ -4,7 +4,7 @@ Version:        0.9.0
 Release:        2
 License:        GPLv3
 Group:          Games/Other
-Url:            http://code.google.com/p/%{name}/
+Url:            https://code.google.com/p/%{name}/
 Source0:        http://urtconnector.googlecode.com/files/%{name}-%{version}.tar.gz
 
 BuildRequires:  qt4-devel
